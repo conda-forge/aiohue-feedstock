@@ -1,0 +1,45 @@
+schema_version: 1
+
+context:
+  name: aiohue
+  version: 4.7.3
+
+package:
+  name: ${{ name|lower }}
+  version: ${{ version }}
+
+source:
+  url: https://pypi.io/packages/source/${{ name[0] }}/${{ name }}/aiohue-${{ version }}.tar.gz
+  sha256: 9a50dfed1174dfc901ebbd29f1d0da5ce02c9704282ece004de40fce20774783
+
+build:
+  number: 1
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv
+
+requirements:
+  host:
+    - python >=3.8
+    - pip
+  run:
+    - python >=3.8
+    - aiohttp
+    - asyncio-throttle
+    - awesomeversion
+
+tests:
+  - python:
+      imports:
+        - aiohue
+      pip_check: true
+
+      python_version: ${{ python_min }}.*
+about:
+  summary: Python module to talk to Philips Hue.
+  license: Apache-2.0
+  license_file: LICENSE
+  homepage: https://github.com/home-assistant-libs/aiohue
+
+extra:
+  recipe-maintainers:
+    - pavelzw
