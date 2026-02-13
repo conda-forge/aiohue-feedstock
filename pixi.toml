@@ -4,10 +4,10 @@
 "$schema" = "https://pixi.sh/v0.59.0/schema/manifest/schema.json"
 
 [workspace]
-name = "aiohue-feedstock"
-version = "3.54.1"  # conda-smithy version used to generate this file
-description = "Pixi configuration for conda-forge/aiohue-feedstock"
-authors = ["@conda-forge/aiohue"]
+name = "tmp.GvKXmD3WtD"
+version = "3.55.0"  # conda-smithy version used to generate this file
+description = "Pixi configuration for conda-forge/tmp.GvKXmD3WtD"
+authors = ["@conda-forge/tmp."]
 channels = ["conda-forge"]
 platforms = ["linux-64", "osx-64", "win-64"]
 requires-pixi = ">=0.59.0"
@@ -22,13 +22,13 @@ cmd = "inspect_artifacts --all-packages"
 description = "List contents of all packages found in rattler-build build directory."
 [tasks.build]
 cmd = "rattler-build build --recipe recipe"
-description = "Build aiohue-feedstock directly (without setup scripts), no particular variant specified"
+description = "Build tmp.GvKXmD3WtD directly (without setup scripts), no particular variant specified"
 [tasks."build-linux_64_"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_.yaml"
-description = "Build aiohue-feedstock with variant linux_64_ directly (without setup scripts)"
+description = "Build tmp.GvKXmD3WtD with variant linux_64_ directly (without setup scripts)"
 [tasks."inspect-linux_64_"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_.yaml"
-description = "List contents of aiohue-feedstock packages built for variant linux_64_"
+description = "List contents of tmp.GvKXmD3WtD packages built for variant linux_64_"
 
 [feature.smithy.dependencies]
 conda-smithy = "*"
