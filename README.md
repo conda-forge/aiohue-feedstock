@@ -1,7 +1,7 @@
 About aiohue-feedstock
 ======================
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/tmp.GvKXmD3WtD-feedstock/blob/main/LICENSE.txt)
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/aiohue-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/home-assistant-libs/aiohue
 
@@ -13,10 +13,11 @@ Current build status
 ====================
 
 
-<table><tr><td>All platforms:</td>
+<table><tr>
+    <td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=None&branchName=main">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/tmp.GvKXmD3WtD-feedstock?branchName=main">
+      <a href="https://github.com/conda-forge/aiohue-feedstock/actions/workflows/conda-build.yml">
+        <img src="https://github.com/conda-forge/aiohue-feedstock/actions/workflows/conda-build.yml/badge.svg?event=push&branch=main">
       </a>
     </td>
   </tr>
