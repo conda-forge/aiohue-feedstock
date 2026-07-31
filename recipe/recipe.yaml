@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: aiohue
-  version: 4.7.3
+  version: "4.9.0"
   python_min: "3.11"
 
 package:
@@ -11,10 +11,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/${{ name[0] }}/${{ name }}/aiohue-${{ version }}.tar.gz
-  sha256: 9a50dfed1174dfc901ebbd29f1d0da5ce02c9704282ece004de40fce20774783
+  sha256: c1c5edf114266f6b5878ffccf82db8b326141cc3d8c3697f5fc3aa87a4d3747e
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
